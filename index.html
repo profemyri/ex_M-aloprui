@@ -2,11 +2,44 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-   ..........
+    <title>Freiduría online</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
-   ..........
+    <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
+    <p>Formulario</p>
+    <fieldset>
+        <legend>Datos del cliente:</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escribe su nombre ..."> <br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" placeholder="Escribe sus apellidos ..."> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Escribe su correo ..."> <br>
+
+        <label for="direccion">Direccion:</label>
+        <input type="text" name="direccion" minlength="18" placeholder="Escribe su direccion ..."> <br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono"><br>
+
+        <label for="hora entrega">Hora de entrega (aproximadamente)</label>
+        <input type="datetime" name="hora entrega">
+    </fieldset>
+    <fieldset>
+        <legend>Pedido de pescado:</legend>
+        <input type="radio" name="calamares" >
+        <label for="calamares">Clamares</label> <br>
+        <input type="radio" name="adobo" >
+        <label for="adobo">Adobo</label> <br>
+        <input type="radio" name="boquerones" >
+        <label for="boquerones">Boquerones</label> <br>
+
+        <legend>Nº de raciones :</legend>
+        
+    </fieldset>
 
     <script src="ex_html-css-js.js"></script>
 
