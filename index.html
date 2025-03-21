@@ -8,75 +8,77 @@
 <body>
     <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
     <img src="pescado_frito.jpg" alt="Bandeja de pescado frito">
-    <p>Formulario</p>
-    <fieldset>
-        <legend>Datos del cliente:</legend>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Escribe su nombre ..."> <br>
+    <form>
+        <fieldset>
+            <legend>Datos del cliente:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe su nombre ..."> <br>
+    
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" placeholder="Escribe sus apellidos ..."> <br>
+    
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Escribe su correo ..."> <br>
+    
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" minlength="18" placeholder="Escribe su direccion ..."> <br>
+    
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono"><br>
+    
+            <label for="hora entrega">Hora de entrega (aproximadamente)</label>
+            <input type="datetime" name="hora entrega">
+        </fieldset>
+        <fieldset>
+            <legend>Pedido de pescado:</legend>
+            <input type="radio" value="calamares" >
+            <label for="calamares">Clamares</label> <br>
+            <input type="radio" value="adobo" >
+            <label for="adobo">Adobo</label> <br>
+            <input type="radio" value="boquerones" >
+            <label for="boquerones">Boquerones</label> <br>
+    
+            <legend>Nº de raciones :</legend>
+            <input type="radio" value="una" >
+            <label for="una">Una racion</label> <br>
+            <input type="radio" value="dos" >
+            <label for="dos">Dos raciones</label> <br>
+            <input type="radio" value="tres" >
+            <label for="tres">Tres raciones</label> <br>
+            <input type="radio" value="cuatro" >
+            <label for="cuatro">Cuatro raciones</label> <br>
+            <input type="radio" value="cinco" >
+            <label for="cinco">Cinco raciones</label> <br>
+            
+            <legend>Acompañamiento:</legend>
+            <input type="checkbox" value="papas">
+            <label for="papas">Papas fitrias</label><br>
+            <input type="checkbox" value="ensaladilla">
+            <label for="ensaladilla">Ensaladilla</label><br>
+            <input type="checkbox" value="manzanilla">
+            <label for="manzanilla">Botella de manzanilla</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Metodo de pago</legend>
+            <input type="radio" value="efectivo" >
+            <label for="efectivo">Efectivo</label> <br>
+            <input type="radio" value="tarjeta" >
+            <label for="tarjeta">Tarjeta</label> <br>
+            <input type="radio" value="paypal" >
+            <label for="paypal">PayPal</label> <br>
+        </fieldset>
+        <fieldset>
+            <textarea name="" id="" rows="5" cols="20">
+                Escribe su comentario
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <label for="enviar">Enviar dinero</label>
+            <input type="button" name="enviar" onclick="Enviar">
+        </fieldset>
+        <footer>Ángel López Ruiz</footer>
+    </form>
 
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" name="apellidos" placeholder="Escribe sus apellidos ..."> <br>
-
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Escribe su correo ..."> <br>
-
-        <label for="direccion">Direccion:</label>
-        <input type="text" name="direccion" minlength="18" placeholder="Escribe su direccion ..."> <br>
-
-        <label for="telefono">Telefono:</label>
-        <input type="tel" name="telefono"><br>
-
-        <label for="hora entrega">Hora de entrega (aproximadamente)</label>
-        <input type="datetime" name="hora entrega">
-    </fieldset>
-    <fieldset>
-        <legend>Pedido de pescado:</legend>
-        <input type="radio" value="calamares" >
-        <label for="calamares">Clamares</label> <br>
-        <input type="radio" value="adobo" >
-        <label for="adobo">Adobo</label> <br>
-        <input type="radio" value="boquerones" >
-        <label for="boquerones">Boquerones</label> <br>
-
-        <legend>Nº de raciones :</legend>
-        <input type="radio" value="una" >
-        <label for="una">Una racion</label> <br>
-        <input type="radio" value="dos" >
-        <label for="dos">Dos raciones</label> <br>
-        <input type="radio" value="tres" >
-        <label for="tres">Tres raciones</label> <br>
-        <input type="radio" value="cuatro" >
-        <label for="cuatro">Cuatro raciones</label> <br>
-        <input type="radio" value="cinco" >
-        <label for="cinco">Cinco raciones</label> <br>
-        
-        <legend>Acompañamiento:</legend>
-        <input type="checkbox" value="papas">
-        <label for="papas">Papas fitrias</label><br>
-        <input type="checkbox" value="ensaladilla">
-        <label for="ensaladilla">Ensaladilla</label><br>
-        <input type="checkbox" value="manzanilla">
-        <label for="manzanilla">Botella de manzanilla</label><br>
-    </fieldset>
-    <fieldset>
-        <legend>Metodo de pago</legend>
-        <input type="radio" value="efectivo" >
-        <label for="efectivo">Efectivo</label> <br>
-        <input type="radio" value="tarjeta" >
-        <label for="tarjeta">Tarjeta</label> <br>
-        <input type="radio" value="paypal" >
-        <label for="paypal">PayPal</label> <br>
-    </fieldset>
-    <fieldset>
-        <textarea name="" id="" rows="5" cols="20">
-            Escribe su comentario
-        </textarea>
-    </fieldset>
-    <fieldset>
-        <label for="enviar">Enviar dinero</label>
-        <input type="button" name="enviar" onclick="Enviar">
-    </fieldset>
-    <footer>Ángel López Ruiz</footer>
 
     <script src="ex_html-css-js.js"></script>
 
