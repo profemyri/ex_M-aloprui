@@ -23,6 +23,8 @@ img{
    max-width: 100%;
    justify-content: center;
 }
-.datos_clientes{
-   
+
+.enviar_pedido{
+   color: #0077b6;
+   text-emphasis-color: white;
 }
