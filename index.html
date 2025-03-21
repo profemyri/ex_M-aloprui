@@ -29,16 +29,18 @@
             <label for="hora entrega">Hora de entrega (aproximadamente)</label>
             <input type="datetime" name="hora entrega">
         </fieldset>
+
         <fieldset>
-            <h2>Pedido de pescado:</h2>
-            <input type="radio" value="calamares" >
+            <h2>Pedido de pescado</h2>
+            <label for="tipo">Tipo de pescado:</label>
+            <input type="radio" name="calamares" value="tipo">
             <label for="calamares">Clamares</label> <br>
-            <input type="radio" value="adobo" >
+            <input type="radio" name="adobo" value="tipo" >
             <label for="adobo">Adobo</label> <br>
-            <input type="radio" value="boquerones" >
+            <input type="radio" name="boquerones" value="tipo" >
             <label for="boquerones">Boquerones</label> <br>
     
-            <legend>Nº de raciones :</legend>
+            <label>Nº de raciones :</label>
             <input type="radio" value="una" >
             <label for="una">Una racion</label> <br>
             <input type="radio" value="dos" >
@@ -50,7 +52,7 @@
             <input type="radio" value="cinco" >
             <label for="cinco">Cinco raciones</label> <br>
             
-            <legend>Acompañamiento:</legend>
+            <label>Acompañamiento:</label>
             <input type="checkbox" value="papas">
             <label for="papas">Papas fitrias</label><br>
             <input type="checkbox" value="ensaladilla">
